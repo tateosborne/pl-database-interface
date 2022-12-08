@@ -1183,7 +1183,7 @@ def edit_database(conn, cursor):
         
     # admin control
     print("Welcome, admin.")
-    print("\Choose a table to modify:\n  - fantasy\n  - players\n  - season\n  - exit")
+    print("Choose a table to modify:\n  - fantasy\n  - players\n  - season\n  - exit")
     to_modify = input("  > ")
     
     while to_modify not in ["fantasy", "players", "season", "exit"]:
@@ -1193,7 +1193,7 @@ def edit_database(conn, cursor):
     if to_modify == "exit":
         return
     
-    print("Choose an action:  - INSERT INTO\n  - DELETE FROM\n  - ALTER TABLE")
+    print("Choose an action:\n  - INSERT INTO\n  - DELETE FROM\n  - ALTER TABLE")
     action = input("  > ")
     while action not in ["INSERT INTO", "DELETE FROM", "ALTER TABLE"]:
         print("\nInvalid action. Choose again:")
